@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multyplex</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+    <audio id="myAudio2">
+        <source src="audio/correct_1.mp3">
+    </audio>
+
+    <audio id="myAudio">
+        <source src="audio/wrong.mp3">
+    </audio>
+
+    <header>
+        <div class="container">
+            <h1><a href="index.html">MULTIPLIPLEX</a></h1>
+            <ul>
+                <li><a class="active" href="multiply.html">Multiply</a></li>
+                <li><a href="divide.html">Divide</a></li>
+                <li><a href="add.html">Add</a></li>
+                <li><a href="subtract.html">Subtract</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="equation">
+            <h1 id="num1" style="color: #fe4a49;">1</h1>
+            <h1 style="color: #2ab7ca;">*</h1>
+            <h1 style="color: #ac891f;" id="num2">1</h1>
+            <h1 style="color: #fe4a49;">=</h1>
+            <h1 style="color: gray;">?</h1>
+
+        </div>
+        <div class="answer-options">
+            <h1 id="option1">1</h1>
+            <h1 id="option2">2</h1>
+            <h1 id="option3">3</h1>
+        </div>
+    </div>
+
+    <script src="multiplication.js"></script>
+</body>
